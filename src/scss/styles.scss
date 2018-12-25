@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 $body-bg: #ffffff;
+$font-family-sans-serif: "Poppins";
 
-$border-radius: .99rem;
+$border-radius: 100rem;
+
+@import "node_modules/bootstrap/scss/bootstrap";
 
 .intro-slider {
   height: (100vh);
@@ -13,14 +16,20 @@ $border-radius: .99rem;
   left: 0;
 }
 
+h1 {
+  line-height: 1.8;
+}
+
+.slider-btn {
+  width: 10.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
 .header {
   position: absolute;
   width: 100%;
   top: 75px;
   z-index: 1000;
 }
-
-.align-slider-content {
-}
-
-@import "node_modules/bootstrap/scss/bootstrap";
