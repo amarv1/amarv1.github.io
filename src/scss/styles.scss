@@ -2,10 +2,39 @@
 
 $body-bg: #ffffff;
 $font-family-sans-serif: "Poppins";
+$secondary: #657788;
+$info: #17bf98;
+
+$carousel-indicator-width: 1rem;
+$carousel-indicator-height: 1rem;
+$carousel-indicator-hit-area-height: 1rem;
+$carousel-indicator-active-bg: #17bf98;
 
 $border-radius: 100rem;
+$card-border-radius: 0;
+
+$line-height-base: 1.6;
+$headings-line-height: 1.6;
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
+.mb-7 {
+  margin-bottom: 4.5rem;
+}
+
+.carousel-indicators {
+  bottom: -4.5rem;
+}
+
+
+.carousel-inner {
+  border-radius: 2rem;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
+}
 
 .intro-slider {
   height: (100vh);
@@ -16,8 +45,29 @@ $border-radius: 100rem;
   left: 0;
 }
 
+.card-style {
+  width: 23rem;
+  height: 17.5rem;
+  border: 0;
+  box-shadow: 0px 10px 25px 0 rgba(0, 0, 0, 0.1);
+  line-height: 1.6
+}
+
+.card-image {
+  width: 65px;
+  height: 65px;
+}
+
 h1 {
   line-height: 1.8;
+}
+
+h2 {
+  color: #1e1e1e;
+}
+
+.card h4 {
+  font-size: 1.37rem;
 }
 
 .slider-btn {
@@ -32,4 +82,10 @@ h1 {
   width: 100%;
   top: 75px;
   z-index: 1000;
+}
+
+footer {
+  background-image: url("/assets/images/bg-footer.png");
+  background-repeat: no-repeat;
+  background-color: #46564c;
 }
