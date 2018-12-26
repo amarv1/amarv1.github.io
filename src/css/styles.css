@@ -7003,9 +7003,10 @@ h2 {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 20px solid white; }
+  border-top: 35px solid white; }
 
 footer {
   background-image: url("/assets/images/bg-footer.png");
+  background-position-x: center;
   background-repeat: no-repeat;
   background-color: #46564c; }
