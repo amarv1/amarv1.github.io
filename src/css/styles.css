@@ -6998,6 +6998,13 @@ h2 {
   left: 100%;
   margin-left: 30px; }
 
+#triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 20px solid white; }
+
 footer {
   background-image: url("/assets/images/bg-footer.png");
   background-repeat: no-repeat;
