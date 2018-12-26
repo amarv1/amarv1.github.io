@@ -18,9 +18,13 @@ $headings-line-height: 1.6;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+::selection {
+  background: #17bf98; /* WebKit/Blink Browsers */
+  color: white;
+}
 
-.mb-7 {
-  margin-bottom: 4.5rem;
+.section-spacing {
+  margin-bottom: 8rem;
 }
 
 .carousel-indicators {
@@ -43,6 +47,15 @@ $headings-line-height: 1.6;
   position: relative;
   top: 0;
   left: 0;
+  background: url("/assets/images/slider-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.intro-slider img {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
 }
 
 .card-style {
@@ -89,10 +102,12 @@ h2 {
   line-height: 0.5;
   text-align: center;
 }
+
 .fancy span {
   display: inline-block;
   position: relative;
 }
+
 .fancy span:before,
 .fancy span:after {
   content: "";
@@ -102,10 +117,12 @@ h2 {
   top: 3.5rem;
   width: 800%;
 }
+
 .fancy span:before {
   right: 100%;
   margin-right: 30px;
 }
+
 .fancy span:after {
   left: 100%;
   margin-left: 30px;
@@ -126,4 +143,21 @@ footer {
   background-position-x: center;
   background-repeat: no-repeat;
   background-color: #46564c;
+}
+
+.footer-form-inputs {
+  border-bottom: 1px solid #748179
+  background-color: transparent;
+}
+
+@media (min-width: 1600px) {
+  .intro-slider {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 990px) {
+  .intro-slider img {
+    display: none;
+  }
 }

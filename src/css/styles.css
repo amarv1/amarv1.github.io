@@ -6922,8 +6922,13 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.mb-7 {
-  margin-bottom: 4.5rem; }
+::selection {
+  background: #17bf98;
+  /* WebKit/Blink Browsers */
+  color: white; }
+
+.section-spacing {
+  margin-bottom: 8rem; }
 
 .carousel-indicators {
   bottom: -4.5rem; }
@@ -6940,7 +6945,15 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #435;
   position: relative;
   top: 0;
-  left: 0; }
+  left: 0;
+  background: url("/assets/images/slider-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: center; }
+
+.intro-slider img {
+  position: absolute;
+  right: 1rem;
+  bottom: 0; }
 
 .card-style {
   width: 23rem;
@@ -7010,3 +7023,15 @@ footer {
   background-position-x: center;
   background-repeat: no-repeat;
   background-color: #46564c; }
+
+.footer-form-inputs {
+  border: 0;
+  background-color: transparent; }
+
+@media (min-width: 1600px) {
+  .intro-slider {
+    background-size: contain; } }
+
+@media (max-width: 990px) {
+  .intro-slider img {
+    display: none; } }
