@@ -426,6 +426,10 @@ footer {
   right: 0;
 }
 
+input, textarea {
+  border-bottom: 1px solid $info;
+  line-height: 2rem;
+}
 //End carousel
 
 
