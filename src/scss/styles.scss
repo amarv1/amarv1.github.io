@@ -41,6 +41,11 @@ $headings-line-height: 1.6;
   margin-top: 2rem;
 }
 
+.navbar-brand img {
+  width: 235px;
+  height: 80px;
+}
+
 .navbar li.active {
   border-bottom: 3px solid $info;
 }
@@ -133,6 +138,9 @@ h2 {
   margin-left: 30px;
 }
 
+
+//Footer
+
 #triangle {
 
   width: 0;
@@ -157,9 +165,13 @@ footer {
   border: 0;
 }
 
+//End footer
+
+//Circles
+
 .circle-container {
   display: flex;
-  align-content: central;
+  align-content: center;
   width: fit-content;
 }
 
@@ -245,8 +257,90 @@ footer {
   background-image: linear-gradient(43deg, #907de4, #21dfd1);
 }
 
+@media (max-width: 1600px) {
 
+  .circle h1 {
+    line-height: 1;
+    font-size: 2rem;
+  }
 
+  .circle h5 {
+    line-height: 0;
+    font-size: 1rem;
+  }
+
+  .central-circle img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .central-circle {
+    display: flex;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 3px 30px 0 rgba(63, 159, 197, 0.2);
+  }
+
+  .guide-circle {
+    position: absolute;
+    width: 403px;
+    height: 403px;
+    border: 1.5px solid #ddd;
+    z-index: -1;
+    border-radius: 50%;
+
+  }
+
+  .circle {
+    width: 6.75rem;
+    height: 6.75rem;
+    background-color: #444;
+    border-radius: 50%;
+    align-self: center;
+  }
+
+  .circle-1 {
+    background-color: #444;
+    position: relative;
+    top: 165px;
+    left: 150px;
+    box-shadow: 0px 20px 20px 0 rgba(241, 125, 111, 0.22);
+    background-image: linear-gradient(43deg, #ee727d, #fda23f);
+  }
+
+  .circle-2 {
+    background-color: #0d0;
+    position: relative;
+    left: -45px;
+    box-shadow: 0px 20px 20px 0 rgba(131, 137, 226, 0.22);
+    background-image: linear-gradient(43deg, #907de4, #21dfd1);
+  }
+
+  .circle-3 {
+    background-color: #0d0;
+    position: relative;
+    left: 45px;
+    box-shadow: 0px 20px 20px 0 rgba(131, 137, 226, 0.22);
+    background-image: linear-gradient(43deg, #3bb5b6, #42e397);
+  }
+
+  .circle-4 {
+    background-color: #444;
+    position: relative;
+    top: 165px;
+    left: -150px;
+    box-shadow: 0px 20px 20px 0 rgba(131, 137, 226, 0.22);
+    background-image: linear-gradient(43deg, #907de4, #21dfd1);
+  }
+}
+
+//End circles
+
+//Carousel
 
 .carousel h2 {
 	color: #333;
@@ -331,7 +425,7 @@ footer {
   right: 0;
 }
 
-
+//End carousel
 
 
 
@@ -349,5 +443,22 @@ footer {
 
   .input-container {
     margin-top: 30px;
+  }
+
+  .circle-container {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 990px) {
+  .circled p, .circled h3 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .circle-column {
+    align-items: center !important;
   }
 }
