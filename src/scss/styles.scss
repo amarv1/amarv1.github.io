@@ -4,6 +4,7 @@ $body-bg: #ffffff;
 $font-family-sans-serif: "Poppins";
 $secondary: #657788;
 $info: #17bf98;
+$navbar-dark-color: rgba(255, 255, 255, 1);
 
 $carousel-indicator-width: 1rem;
 $carousel-indicator-height: 1rem;
@@ -38,6 +39,10 @@ $headings-line-height: 1.6;
 
 .mt-2rem {
   margin-top: 2rem;
+}
+
+.navbar li.active {
+  border-bottom: 3px solid $info;
 }
 
 .intro-slider {
@@ -152,6 +157,93 @@ footer {
   border: 0;
 }
 
+.circle-container {
+  display: flex;
+  align-content: central;
+  width: fit-content;
+}
+
+.central-circle {
+  display: flex;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 5px 59px 0 rgba(63, 159, 197, 0.2);
+}
+
+.central-circle:hover {
+  background-color: #ffd;
+}
+
+.guide-circle {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  border: 1.5px solid #ddd;
+  z-index: -1;
+  border-radius: 50%;
+
+}
+
+.circle {
+  width: 9rem;
+  height: 9rem;
+  background-color: #444;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.circle h1 {
+  line-height: 1;
+}
+
+.circle h5 {
+  line-height: 0;
+}
+
+.center-circle-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circle-1 {
+  background-color: #444;
+  position: relative;
+  top: 220px;
+  left: 200px;
+  box-shadow: 0px 20px 20px 0 rgba(241, 125, 111, 0.22);
+  background-image: linear-gradient(43deg, #ee727d, #fda23f);
+}
+
+.circle-2 {
+  background-color: #0d0;
+  position: relative;
+  left: -60px;
+  box-shadow: 0px 20px 20px 0 rgba(131, 137, 226, 0.22);
+  background-image: linear-gradient(43deg, #907de4, #21dfd1);
+}
+
+.circle-3 {
+  background-color: #0d0;
+  position: relative;
+  left: 60px;
+  box-shadow: 0px 20px 20px 0 rgba(131, 137, 226, 0.22);
+  background-image: linear-gradient(43deg, #3bb5b6, #42e397);
+}
+
+.circle-4 {
+  background-color: #444;
+  position: relative;
+  top: 220px;
+  left: -200px;
+  box-shadow: 0px 20px 20px 0 rgba(131, 137, 226, 0.22);
+  background-image: linear-gradient(43deg, #907de4, #21dfd1);
+}
 
 
 
@@ -238,6 +330,7 @@ footer {
   position: relative;
   right: 0;
 }
+
 
 
 
