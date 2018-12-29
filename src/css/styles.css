@@ -6949,18 +6949,19 @@ a.text-dark:hover, a.text-dark:focus {
 .intro-slider {
   height: 100vh;
   width: 100%;
-  background-color: #435;
   position: relative;
   top: 0;
   left: 0;
-  background: url("/assets/images/slider-bg.png");
+  /* background: url("/assets/images/slider-bg.png");
   background-repeat: no-repeat;
-  background-position-x: center; }
+  background-position-x: center;*/
+  padding-top: 200px; }
 
-.intro-slider img {
+.intro-slider > img {
   position: absolute;
-  right: 1rem;
-  bottom: 0; }
+  top: 0rem;
+  right: 0rem;
+  z-index: -10; }
 
 .card-style {
   width: 23rem;
@@ -7256,8 +7257,10 @@ footer {
     background-size: contain; } }
 
 @media (max-width: 990px) {
-  .intro-slider img {
+  .intro-slider div img {
     display: none; }
+  .intro-slider {
+    padding-top: 400px; }
   .input-container {
     margin-top: 30px; }
   .circle-container {
