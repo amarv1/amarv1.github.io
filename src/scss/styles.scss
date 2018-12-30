@@ -146,19 +146,23 @@ h2 {
   content: "";
   position: absolute;
   height: 1px;
-  border-bottom: 1px solid #748179;
+  //border-bottom: 1px solid #748179;
   top: 3.5rem;
-  width: 800%;
+  width: 1000%;
 }
 
 .fancy span:before {
   right: 100%;
   margin-right: 30px;
+  opacity: 0.2;
+  background-image: linear-gradient(to left, #ffffff, rgba(255,255,255,0));
 }
 
 .fancy span:after {
   left: 100%;
   margin-left: 30px;
+  opacity: 0.2;
+  background-image: linear-gradient(to right, #ffffff, rgba(255,255,255,0));
 }
 
 
@@ -448,11 +452,17 @@ footer {
   right: 0;
 }
 
-input, textarea {
-  border-bottom: 1px solid $info;
-  line-height: 2rem;
-}
+
 //End carousel
+
+  input, textarea {
+    border-bottom: 1px solid $info;
+    line-height: 2rem;
+  }
+
+  .input-container textarea {
+    width: 100% !important;
+  }
 
 
 
@@ -474,10 +484,6 @@ input, textarea {
 
   .input-container {
     margin-top: 30px;
-  }
-
-  .input-container textarea {
-    width: 100%;
   }
 
   .circle-container {
