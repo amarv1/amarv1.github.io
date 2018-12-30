@@ -7325,6 +7325,8 @@ input, textarea {
     padding-top: 400px; }
   .input-container {
     margin-top: 30px; }
+  .input-container textarea {
+    width: 100%; }
   .circle-container {
     margin-top: 150px;
     margin-bottom: 100px; } }
