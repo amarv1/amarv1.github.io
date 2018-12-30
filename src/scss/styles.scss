@@ -5,6 +5,7 @@ $font-family-sans-serif: "Poppins";
 $secondary: #657788;
 $info: #17bf98;
 $navbar-dark-color: rgba(255, 255, 255, 1);
+$enable-gradients: true;
 
 $carousel-indicator-width: 1rem;
 $carousel-indicator-height: 1rem;
@@ -46,12 +47,16 @@ $headings-line-height: 1.6;
   height: 80px;
 }
 
+.navbar li {
+  font-size: 15px;
+}
+
 .navbar li.active {
   border-bottom: 3px solid $info;
 }
 
 .intro-slider {
-  height: (100vh);
+  //height: (100vh);
   width: 100%;
   position: relative;
   top: 0;
@@ -69,12 +74,25 @@ $headings-line-height: 1.6;
   z-index: -10;
 }
 
+.circled h6 {
+  letter-spacing: 3px;
+}
+
+#carouselExampleIndicators {
+  margin: 0;
+  padding: 0;
+}
+
 .card-style {
   width: 23rem;
   height: 17.5rem;
   border: 0;
   box-shadow: 0px 10px 25px 0 rgba(0, 0, 0, 0.1);
   line-height: 1.6
+}
+
+.card-style:hover {
+  background-color: #eeffff;
 }
 
 .card-image {
@@ -161,7 +179,7 @@ footer {
 }
 
 .footer-form-inputs {
-  border-bottom: 1px solid #748179;
+  border-bottom: 1px solid #748179 !important;
   background-color: transparent;
   border: 0;
 }
