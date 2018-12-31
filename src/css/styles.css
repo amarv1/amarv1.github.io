@@ -7014,6 +7014,42 @@ a.text-dark:hover, a.text-dark:focus {
 .circled h6 {
   letter-spacing: 3px; }
 
+.bg-circle-small {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #8ea48b;
+  opacity: 0.5; }
+
+.bg-circle-mid {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: #8ea48b;
+  opacity: 0.1; }
+
+.bg-circle-big {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  background-color: #8ea48b;
+  opacity: 0.1; }
+
+.bg-circle-pos-1 {
+  position: absolute;
+  top: 0px;
+  left: -150px; }
+
+.bg-circle-pos-2 {
+  position: absolute;
+  top: 130px;
+  left: -450px; }
+
+.bg-circle-pos-3 {
+  position: absolute;
+  top: 130px;
+  left: 200px; }
+
 #carouselExampleIndicators {
   margin: 0;
   padding: 0; }
